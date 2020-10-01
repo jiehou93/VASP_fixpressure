@@ -18,7 +18,7 @@ Suggestions for accurate force calculation:
 3. Use PREC=Accurate
 
 Suggestions for better computational efficiency:
-Use LWAVE=.T. and default ISTART and ICHARG, this allows VASP to read WAVECAR from previous interation, instead of starting from scratch
+1. Use LWAVE=.T. and default ISTART and ICHARG, this allows VASP to read WAVECAR from previous interation, instead of starting from scratch
 
 General algorithm:
 1. run vasp with ISIF=2 to get current pressure tensor
