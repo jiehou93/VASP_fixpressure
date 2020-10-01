@@ -13,9 +13,9 @@ Instructions for usage:
 6. cd to job directory and use 'qsub fixpressure.py' (assuming you are using pbs job system) to submit your job 
 
 Suggestions for accurate force calculation:
-Use a high ECUT and k-points density (from my experience, force converges very slowly against k-points in VASP)
-Use LREAL=.FALSE., real space calculation sometimes return ridiculous forces.
-Use PREC=Accurate
+1. Use a high ECUT and k-points density (from my experience, force converges very slowly against k-points in VASP)
+2. Use LREAL=.FALSE., real space calculation sometimes return ridiculous forces.
+3. Use PREC=Accurate
 
 Suggestions for better computational efficiency:
 Use LWAVE=.T. and default ISTART and ICHARG, this allows VASP to read WAVECAR from previous interation, instead of starting from scratch
