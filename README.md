@@ -13,7 +13,7 @@ Instructions for usage:
 6. cd to job directory and use 'qsub fixpressure.py' (assuming you are using pbs job system) to submit your job 
 
 Suggestions for accurate force calculation:
-1. Use a high ECUT and k-points density (from my experience, force converges very slowly against k-points in VASP)
+1. Use a high ECUT and k-points density (from my experience, force and elastic constants converges very slowly against k-points in VASP)
 2. Use LREAL=.FALSE., real space calculation sometimes return ridiculous forces.
 3. Use PREC=Accurate
 
