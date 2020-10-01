@@ -2,7 +2,7 @@
 This code allows VASP to perform structure relaxation to reach a designated stress tensor (which is not a standard VASP feature).
 In general, the code can adjust the POSCAR automatically, and call VASP iteratively until the stress state converges to the value you desire. 
 Note isotropic linear elastic theory is used to adjust POSCAR. For anisotropic materials, this might slow down the convegency. I performed some benchmark simulations were dones using this code for W, Mo, Cr, alpha-Fe systems, so far it works fine. 
-However, for highly anisotropic materials, you might encounter some convergency problem. A possible solution is to modify the code by including a full stifiness tensor (Cijkl).
+However, you might encounter some convergency problem for highly anisotropic materials. A possible solution to that is to modify the code by including a full stifiness tensor (Cijkl).
 
 Instructions for usage:
 1. Input the pressure (stress) tensor in the script
