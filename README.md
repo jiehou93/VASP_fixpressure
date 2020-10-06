@@ -4,6 +4,8 @@ In general, the code can adjust the POSCAR automatically, and call VASP iterativ
 Note isotropic linear elastic theory is used to adjust POSCAR. For anisotropic materials, this might slow down the convegency. I performed some benchmark simulations using this code for W, Mo, Cr, alpha-Fe systems, so far it works fine. 
 However, you might encounter some convergency problem for highly anisotropic materials. A possible solution to that is to modify the code by including a full stifiness tensor (Cijkl).
 
+Please cite: https://doi.org/10.1016/j.actamat.2020.09.048
+
 Instructions:
 1. Input the pressure (stress) tensor in the script
 2. Input estimated elastic modulus in the script
