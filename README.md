@@ -17,7 +17,7 @@ Instructions:
 Suggestions for accurate force calculation:
 1. Use a high ECUT and k-points density (from my experience, force and elastic constants converges very slowly against k-points in VASP)
 2. Use LREAL=.FALSE., real space calculation sometimes return ridiculous forces.
-3. Use PREC=Accurate
+3. If your have a large system that recripical space calculation is too expensive, try LREAL=Auto with PREC=Accurate, and ADDGRID=.True.
 
 Suggestions for better computational efficiency:
 1. Use LWAVE=.T. and default ISTART and ICHARG, this allows VASP to read WAVECAR from previous interation, instead of starting from scratch
